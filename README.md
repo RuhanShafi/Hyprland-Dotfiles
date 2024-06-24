@@ -2,11 +2,13 @@
 
 ## Applications
 
+* OS - Arch <sub><sub>BTW :)</sub>
 * Web Browser - Floorp with Customised Shina Fox Rice
 * Status Bar - Waybar
 * Dmenu Launcher - Rofi
 * Music Player - Spicetify
 * Shell - Zsh
+    * Theme - Powerlevel10k
 * Terminal - Konsole
 * File Manager - Dolphin
 
