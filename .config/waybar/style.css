@@ -1,12 +1,14 @@
+@import "mocha.css";
+
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-size: 13.5px;
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0.5);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    background-color: shade(@base, 0.9);
+    border-bottom: 3px solid alpha(@crust, 0.8);
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -50,7 +52,7 @@ button:hover {
 
 /* you can set a style on hover for any module like this */
 #pulseaudio:hover {
-    background-color: #a37800;
+    background-color: @base;
 }
 
 #workspaces button {
@@ -114,12 +116,12 @@ button:hover {
 }
 
 #clock {
-    background-color: #64727D;
+    background-color: @base;
 }
 
 #battery {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: @base;
+    color: @text;
 }
 
 #battery.charging, #battery.plugged {
@@ -155,13 +157,13 @@ button:hover {
 }
 
 #power-profiles-daemon.balanced {
-    background-color: #2980b9;
-    color: #ffffff;
+    background-color: @base;
+    color: @text;
 }
 
 #power-profiles-daemon.power-saver {
-    background-color: #2ecc71;
-    color: #000000;
+    background-color: @base;
+    color: @text;
 }
 
 label:focus {
@@ -169,12 +171,13 @@ label:focus {
 }
 
 #cpu {
-    background-color: #2ecc71;
-    color: #000000;
+    background-color: @base;
+    color: @text;
 }
 
 #memory {
-    background-color: #9b59b6;
+    background-color: @base;
+    color: @text;
 }
 
 #disk {
@@ -182,11 +185,13 @@ label:focus {
 }
 
 #backlight {
-    background-color: #90b1b1;
+    background-color: @base;
+    color: @text;
 }
 
 #network {
-    background-color: #2980b9;
+    background-color: @base;
+    color: @text;
 }
 
 #network.disconnected {
@@ -194,8 +199,8 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #f1c40f;
-    color: #000000;
+    background-color: @base;
+    color: @text;
 }
 
 #pulseaudio.muted {
@@ -227,7 +232,8 @@ label:focus {
 }
 
 #temperature {
-    background-color: #f0932b;
+    background-color: @base;
+    color: @text;
 }
 
 #temperature.critical {
@@ -235,7 +241,8 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+    background-color: @base;
+    color: @text;
 }
 
 #tray > .passive {

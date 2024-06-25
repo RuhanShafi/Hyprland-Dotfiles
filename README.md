@@ -6,7 +6,9 @@
 * WM - Hyprland
     * Wallpaper - ``wpaperd``
     * Icons - Inverse Blue
-    * 
+    * Screen Locking - ``hyprlock``
+    * Screen Idleing - ``hypridle``
+    * Multiple Screen Workflow - ``hyprsome``
 * Web Browser - Floorp
     * Theme - Customised Shina Fox Rice
     * Sidebars

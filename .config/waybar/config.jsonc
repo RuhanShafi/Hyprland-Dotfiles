@@ -14,7 +14,9 @@
         "custom/media"
     ],
     "modules-center": [
-        "clock"
+        "cpu",
+        "clock",
+        "memory"
     ],
     "modules-right": [
         "mpd",
@@ -22,8 +24,8 @@
         "pulseaudio",
         "network",
         "power-profiles-daemon",
-        "cpu",
-        "memory",
+        //"cpu",
+        //"memory",
         "temperature",
         "backlight",
         "keyboard-state",
@@ -169,7 +171,7 @@
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
+         "scroll-step": 5, // %, can be a float
         "format": "{volume}% {icon} {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
