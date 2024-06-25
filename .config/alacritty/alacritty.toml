@@ -1,3 +1,7 @@
+import = [
+	"/home/ruhanshafi/dotfiles/.config/alacritty/themes/catppuccin-mocha.toml"
+]
+
 [env]
 TERM = "xterm-256color"
 
