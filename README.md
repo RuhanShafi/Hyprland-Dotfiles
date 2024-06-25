@@ -9,12 +9,12 @@
 * Music Player - Spicetify
 * Shell - Zsh
     * Theme - Powerlevel10k
-* Terminal - Konsole
+* Terminal - Alacritty
 * File Manager - Dolphin
 
 ## Keybindings
 | Keys | Action |
 | :--- | :--- |
-| <kbd>Super</kbd> + <kbd>T</kbd> | Launch terminal emulator (Konsole) |
+| <kbd>Super</kbd> + <kbd>T</kbd> | Launch terminal emulator (Alacritty) |
 | <kbd>Super</kbd> + <kbd>E</kbd> | Launch file manager (Dolphin) |
 | <kbd>Super</kbd> + <kbd>L</kbd> | Lock Screen (Hyprlock) |
