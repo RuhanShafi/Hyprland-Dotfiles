@@ -5,15 +5,21 @@
 * OS - Arch <sub><sub>BTW :)</sub>
 * WM - Hyprland
     * Wallpaper - ``wpaperd``
+    * Icons - Inverse Blue
+    * 
 * Web Browser - Floorp
     * Theme - Customised Shina Fox Rice
+    * Sidebars
+        * Tabs | Left side - Sidebery
+        * Powerbar | Right Side - Native Floorp Powerbar Panel (Will not be present if using Firefox)
 * Status Bar - Waybar
 * Dmenu Launcher - Rofi
 * Music Player - Spicetify
     * Theme - Galaxy (Suprisingly not Catppuccin)
-* Shell - Zsh
-    * Theme - Powerlevel10k
+
 * Terminal - Alacritty
+    * Shell - Zsh
+        * Theme - Powerlevel10k
 * File Manager - Dolphin
 * IDEs 
     * General Editing - Neovim
