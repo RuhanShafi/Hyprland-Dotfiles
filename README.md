@@ -26,6 +26,7 @@
 * IDEs 
     * General Editing - Neovim
     * Machine Learning & Juipter Notebook / Stuff you really don't want to do in a terminal - Code
+    * Maths - TexStudio + TexLive
 
 ## Keybindings
 | Keys | Action |
