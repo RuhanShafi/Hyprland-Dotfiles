@@ -6,26 +6,14 @@
     font-size: 13.5px;
 }
 
-window#waybar {
-    background-color: shade(@base, 0.9);
-    border-bottom: 3px solid alpha(@base, 0.9);
-    color: #ffffff;
-    transition-property: background-color;
-    transition-duration: .5s;
-}
 
-window#waybar.hidden {
-    opacity: 0.2;
-}
-
-/*
-window#waybar.empty {
+window#waybar,
+window#waybar.empty,
+window#waybar.empty #window {
     background-color: transparent;
+    padding: 0px;
+    border: 0px;
 }
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
 
 window#waybar.termite {
     background-color: #3F3F3F;
@@ -52,12 +40,13 @@ button:hover {
 
 /* you can set a style on hover for any module like this */
 #pulseaudio:hover {
-    background-color: @base;
+    background-color: @blue;
+    color: @crust
 }
 
 #workspaces button {
     padding: 0 5px;
-    background-color: transparent;
+    background-color: @base;
     color: @text;
 }
 
@@ -115,10 +104,10 @@ button:hover {
     margin-right: 0;
 }
 
+
 #clock {
     background-color: @base;
-    color: @text;
-}
+    color: @text;}
 
 #battery {
     background-color: @base;

@@ -10,13 +10,12 @@
         "hyprland/workspaces",
         "hyprland/mode",
         "hyprland/scratchpad",
-        "hyprland/window",
-        "custom/media"
+        //"hyprland/window",
+        "custom/media",
+        "custom/weather"
     ],
     "modules-center": [
-        "cpu",
-        "clock",
-        "memory"
+        "group/middle"
     ],
     "modules-right": [
         "mpd",
@@ -200,5 +199,25 @@
         "escape": true,
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    },
+
+    "custom/weather": {
+    "exec": "home/ruhanshafi/.config/waybar/scripts/get_weather.sh Berlin+Germany",
+    "return-type": "json",
+    "format": "{}",
+    "tooltip": true,
+    "interval": 3600
+    },
+
+    "group/middle": {
+        "orientation": "inherit",
+        "modules": [
+            "cpu",
+            "clock",
+            "memory"
+        ]
     }
 }
+
+
+
