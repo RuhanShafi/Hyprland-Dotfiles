@@ -9,6 +9,7 @@
     * Screen Locking - ``hyprlock``
     * Screen Idleing - ``hypridle``
     * Multiple Screen Workflow - ``hyprsome``
+    * Multiple Screen Auto Setup - ``nwg-display``
 * Web Browser - Floorp
     * Theme - Customised Shina Fox Rice
     * Sidebars

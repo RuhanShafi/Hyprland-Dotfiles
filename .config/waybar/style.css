@@ -68,6 +68,7 @@ button:hover {
     box-shadow: inset 0 -3px #ffffff;
 }
 
+#workspaces,
 #clock,
 #battery,
 #cpu,
@@ -85,8 +86,10 @@ button:hover {
 #scratchpad,
 #power-profiles-daemon,
 #mpd {
-    padding: 0 10px;
-    color: #ffffff;
+    padding:0.25rem 0.50rem;
+    margin: 1px 6px;
+    background-color: @base;
+    border-radius: 25px;
 }
 
 #window,
@@ -107,7 +110,8 @@ button:hover {
 
 #clock {
     background-color: @base;
-    color: @text;}
+    color: @text;
+}
 
 #battery {
     background-color: @base;
@@ -168,6 +172,7 @@ label:focus {
 #memory {
     background-color: @base;
     color: @text;
+    
 }
 
 #disk {
@@ -322,3 +327,6 @@ label:focus {
 #privacy-item.audio-out {
     background-color: #0069d4;
 }
+
+
+
