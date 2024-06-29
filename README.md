@@ -35,6 +35,12 @@
 | <kbd>Super</kbd> + <kbd>T</kbd> | Launch terminal emulator (Alacritty) |
 | <kbd>Super</kbd> + <kbd>E</kbd> | Launch file manager (Dolphin) |
 | <kbd>Super</kbd> + <kbd>L</kbd> | Lock Screen (Hyprlock) |
+| <kbd>| |
 | <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>→</kbd> | Next Wallpaper |
 | <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>←</kbd> | Previous Wallpaper |
 
+                        
+## Stargazers over time
+[![Stargazers over time](https://starchart.cc/RuhanShafi/Hyprland-Dotfiles.svg?variant=adaptive)](https://starchart.cc/RuhanShafi/Hyprland-Dotfiles)
+
+                    
