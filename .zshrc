@@ -47,6 +47,7 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 alias ls='ls --color=auto'
+alias vim=nvim
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 

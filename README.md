@@ -1,5 +1,14 @@
 ## Ruhan Shafi's 2024 Hyprland Configurations
 
+## Screenshoots
+<details>
+<summary>The Pretty Looking Good Stuff :)</summary>
+Spiced up Spotify - Spicetify (Work in Progress)
+
+![Spicetify](assets/Spotify.png "Spicetify")
+</details>
+
+
 ## Applications
 
 * OS - Arch <sub><sub>BTW :)</sub>
