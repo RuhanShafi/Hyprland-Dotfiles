@@ -8,6 +8,9 @@ configuration {
     display-window:             "WINDOWS";
 	drun-display-format:        "{name}";
 	window-format:              "{w} · {c}";
+    filebrowser{
+        show-hidden: true;
+    }
 }
 
 /*****----- Global Properties -----*****/
@@ -43,7 +46,7 @@ window {
 mainbox {
     enabled:                     true;
     spacing:                     0px;
-    background-color:            transparent;
+    background-color:            #1e1e2e;
     orientation:                 vertical;
     children:                    [ "inputbar", "listbox" ];
 }
@@ -62,7 +65,7 @@ inputbar {
     spacing:                     10px;
     padding:                     100px 60px;
     background-color:            #1e1e2e;
-    background-image:            url("/home/ruhanshafi/Pictures/Wallpapers/1169197.png", width);
+background-image:                url("~/Pictures/Wallpapers/cat_leaves.png", width);
     text-color:                  @foreground;
     orientation:                 horizontal;
     children:                    [ "textbox-prompt-colon", "entry", "dummy", "mode-switcher" ];
@@ -97,7 +100,7 @@ dummy {
 mode-switcher{
     enabled:                     true;
     spacing:                     10px;
-    background-color:            transparent;
+    background-color:            #1e1e2e;
     text-color:                  @foreground;
 }
 button {
