@@ -4,7 +4,7 @@
 
 * OS - Arch <sub><sub>BTW :)</sub>
 * WM - Hyprland
-    * Wallpaper - ``wpaperd``
+    * Wallpaper Daemon - ``wpaperd``
     * Icons - Inverse Blue
     * Screen Locking - ``hyprlock``
     * Screen Idleing - ``hypridle``
@@ -28,6 +28,7 @@
     * General Editing - Neovim
     * Machine Learning & Juipter Notebook / Stuff you really don't want to do in a terminal - Code
     * Maths - TexStudio + TexLive
+* Obsidian
 
 ## Keybindings
 | Keys | Action |
@@ -35,7 +36,7 @@
 | <kbd>Super</kbd> + <kbd>T</kbd> | Launch terminal emulator (Alacritty) |
 | <kbd>Super</kbd> + <kbd>E</kbd> | Launch file manager (Dolphin) |
 | <kbd>Super</kbd> + <kbd>L</kbd> | Lock Screen (Hyprlock) |
-| <kbd>| |
+| <kbd>Super</kbd> + <kbd>P</kbd> | Launch Display Manager (nwg-display) |
 | <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>→</kbd> | Next Wallpaper |
 | <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>←</kbd> | Previous Wallpaper |
 
