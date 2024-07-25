@@ -38,6 +38,7 @@ Spiced up Spotify - Spicetify (Work in Progress)
     * Machine Learning & Juipter Notebook / Stuff you really don't want to do in a terminal - Code
     * Maths - TexStudio + TexLive
 * Obsidian
+</details>
 
 ## Keybindings
 | Keys | Action |
@@ -48,9 +49,8 @@ Spiced up Spotify - Spicetify (Work in Progress)
 | <kbd>Super</kbd> + <kbd>P</kbd> | Launch Display Manager (nwg-display) |
 | <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>→</kbd> | Next Wallpaper |
 | <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>←</kbd> | Previous Wallpaper |
-
                         
-## Stargazers over time
+## Stargazers over time ( Yeah I have a Big Ego... So what?)
 [![Stargazers over time](https://starchart.cc/RuhanShafi/Hyprland-Dotfiles.svg?variant=adaptive)](https://starchart.cc/RuhanShafi/Hyprland-Dotfiles)
 
                     

@@ -7,7 +7,8 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "hyprland/workspaces",
+      //"custom/power",  
+      "hyprland/workspaces",
         "hyprland/mode",
         "hyprland/scratchpad",
         //"hyprland/window",
@@ -22,12 +23,13 @@
         "mpd",
         //"idle_inhibitor",
         "pulseaudio",
-        "network",
+        
         "power-profiles-daemon",
         //"cpu",
         //"memory",
         "temperature",
         "backlight",
+        "network",
         "keyboard-state",
         //"hyprland/language",
         "battery",
@@ -231,6 +233,13 @@
         "actions": {
                    "on-click-right": "mode"
                    }
+    },
+
+    "custom/power": {
+      "format": "{icon}",
+      "format-icons": "󰣇",
+      "exec-on-event": "true",
+      "on-click": "rofi -show drun",
     },
 
     "group/middle": {
