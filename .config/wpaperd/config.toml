@@ -3,4 +3,4 @@ duration = "1m"
 mode = "center"
 
 [any]
-path = "/home/RuhanShafi/Pictures/Wallpapers"
+path = " ~/Pictures/Wallpapers"
