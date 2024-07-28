@@ -15,7 +15,7 @@ Spiced up Spotify - Spicetify (Work in Progress)
 
 | Package Name                                                                            | Description                                        | Package Manager |
 | --------------------------------------------------------------------------------------- | -------------------------------------------------- | --------------- |
-| [nvidia](https://archlinux.org/packages/extra/x86_64/nvidia/)                           | driver                                             | ~~Pacman~~      |
+| [nvidia](https://archlinux.org/packages/extra/x86_64/nvidia/)                           | driver                                             | Pacman          |
 | [ nvidia-utils ](https://archlinux.org/packages/extra/x86_64/nvidia-utils/)             | drivers Utils                                      | Pacman          |
 | [ nvidia-prime ](https://archlinux.org/packages/extra/any/nvidia-prime/)                | nvidia offload                                     | Pacman          |
 | [libva-nvidia-driver](https://archlinux.org/packages/extra/x86_64/libva-nvidia-driver/) | VA-API implementation that uses NVDEC as a backend | Pacman          |
@@ -36,6 +36,33 @@ Spiced up Spotify - Spicetify (Work in Progress)
 </details>
 
 ## Applications
+
+### Network:
+
+<details>
+
+| Package Name                                                                                    | Description          | Package Manager |
+| ----------------------------------------------------------------------------------------------- | -------------------- | --------------- |
+| [ networkmanager ](https://archlinux.org/packages/extra/x86_64/networkmanager/)                 | network manager      | Pacman          |
+| [ network-manager-applet ](https://archlinux.org/packages/extra/x86_64/network-manager-applet/) | network manager tray | Pacman          |
+
+  <br>
+
+</details>
+
+### Bluetooth:
+
+<details>
+
+| Package Name                                                              | Description                    | Package Manager |
+| ------------------------------------------------------------------------- | ------------------------------ | --------------- |
+| [ bluez ](https://archlinux.org/packages/extra/x86_64/bluez/)             | Daemons for bluetooth protocol | Pacman          |
+| [ bluez-utils ](https://archlinux.org/packages/extra/x86_64/bluez-utils/) | utils for bluetooth            | Pacman          |
+| [ blueman ](https://archlinux.org/packages/extra/x86_64/blueman/)         | bluetooth tray                 | Pacman          |
+
+  <br>
+
+</details>
 
 * OS - Arch <sub><sub>BTW :)</sub>
 * WM - Hyprland
