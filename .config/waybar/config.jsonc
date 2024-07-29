@@ -4,21 +4,25 @@
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 30, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
-    "spacing": 4, // Gaps between modules (4px)
+    "spacing": 2, // Gaps between modules (4px)
+
     // Choose the order of the modules
     "modules-left": [
       //"custom/power",  
-        "hyprland/workspaces",
+        //"hyprland/workspaces",
         //"hyprland/window",
-        "hyprland/mode",
-        "hyprland/scratchpad",
+        //"hyprland/mode",
+        //"hyprland/scratchpad",
         //"hyprland/window",
         "custom/media",
-        "custom/weather",
-        "cava"
+        "cava",
+        "cpu",
+        "memory",
+        "network",
+        "custom/weather"
     ],
     "modules-center": [
-        "group/middle"
+      "hyprland/workspaces"  
     ],
     "modules-right": [
         "mpd",
@@ -30,12 +34,13 @@
         //"memory",
         "temperature",
         "backlight",
-        "network",
+        //"network",
         "keyboard-state",
         //"hyprland/language",
         "battery",
         "battery#bat2",
-        "tray"
+        "tray",
+        "clock"
     ],
     "keyboard-state": {
         "numlock": true,
@@ -221,7 +226,7 @@
     },
 
     "cava": {
-        "cava_config": "~/.config/cava/cava.conf",
+//      "cava_config": "$XDG_CONFIG_HOME/cava/cava.conf",
         "framerate": 30,
         "autosens": 1,
         "sensitivity": 100,
