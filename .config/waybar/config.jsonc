@@ -8,7 +8,8 @@
     // Choose the order of the modules
     "modules-left": [
       //"custom/power",  
-      "hyprland/workspaces",
+        "hyprland/workspaces",
+        //"hyprland/window",
         "hyprland/mode",
         "hyprland/scratchpad",
         //"hyprland/window",
@@ -36,23 +37,6 @@
         "battery#bat2",
         "tray"
     ],
-    // Modules configuration
-    // "sway/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -72,6 +56,21 @@
         "tooltip": true,
         "tooltip-format": "{app}: {title}"
     },
+    "hyprland/window": {
+    "format": "  {}",
+    "separate-outputs": true,
+    "max-length": 32,
+    "rewrite": {
+      "(.*)fish": "> [$1]",
+      "(.*)neovide": "neovide 󰕷 ", // doesn't seem to work
+      "(.*)Mozilla Firefox": "Firefox 󰈹",
+      "(.*)BlueMail": "BlueMail 󰊫 ",
+      "(.*)Visual Studio Code": "Code 󰨞",
+      "(.*)Dolphin": "$1 󰉋",
+      "(.*)Spotify": "Spotify 󰓇",
+      "(.*)Steam": "Steam 󰓓"
+    }
+  },
     "mpd": {
         "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
         "format-disconnected": "Disconnected ",
@@ -164,14 +163,22 @@
       }
     },
     "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
-    },
+        // "format": "↕️{bandwidthTotalBytes}",
+        "format": "󰹹{bandwidthTotalBytes}",
+        "format-disconnected": "No Internet⚡",
+        "format-linked": "{ifname} (No IP) ‼️",
+        "format-wifi": " {bandwidthUpBytes} |  {bandwidthDownBytes} | {signalStrength}% 󰖩 ",
+        // "format-wifi": "{essid}({signalStrength}%) 🛜",
+        "format-alt": "{essid}({signalStrength}%) 󰖩 ",
+        "format-ethernet": "🌐 {ipaddr}/{cidr} ",
+        // "tooltip-format-wifi": "🛜 {essid}({signalStrength}%)",
+        "tooltip-format-wifi": "󰖩  {essid}({signalStrength}%)",
+        "tooltip-format-ethernet": "🌐 {ipaddr}/{cidr}",
+        // "tooltip-format-disconnected": "‼️ Disconnected",
+        "tooltip-format-disconnected": "󰖪 ",
+        "on-click-right": "nm-connection-editor",
+        "interval": 2
+      },
     "pulseaudio": {
         "format": "{icon} {volume}",
         "format-bluetooth": "{icon}  {volume}%",

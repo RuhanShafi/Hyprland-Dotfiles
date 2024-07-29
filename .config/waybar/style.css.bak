@@ -1,165 +1,113 @@
 @import "mocha.css";
 
-/* =============================== */
-/* Universal Styling */
 * {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13.5px;
+}
+
+
+window#waybar,
+window#waybar.empty,
+window#waybar.empty #window {
+    background-color: transparent;
+    padding: 0px;
+    border: 0px;
+}
+
+window#waybar.termite {
+    background-color: #3F3F3F;
+}
+
+window#waybar.chromium {
+    background-color: #000000;
+    border: none;
+}
+
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+    /* Avoid rounded borders under each button name */
     border: none;
     border-radius: 0;
-    font-family: "CaskaydiaCove Nerd Font", monospace;
-    font-size: 13px;
-    min-height: 0;
-  }
-  
-  /* =============================== */
-  
-  /* =============================== */
-  /* Bar Styling */
-  #waybar {
-    background: transparent;
-    color: @text;
-  }
-  
-  /* =============================== */
-  
-  /* =============================== */
-  /* Main Modules */
-  #custom-launcher,
-  #workspaces,
-  #window,
-  #tray,
-  #backlight,
-  #clock,
-  #battery,
-  #upower,
-  #pulseaudio,
-  #network,
-  #mpd,
-  #cpu,
-  #memory,
-  #disk,
-  #temperature,
-  #custom-gpu,
-  #custom-music,
-  #custom-updates,
-  #custom-nordvpn,
-  #custom-notifications,
-  #custom-power,
-  #custom-custom,
-  #custom-cycle_wall,
-  #custom-clipboard,
-  #custom-ss,
-  /* #custom-hyprshade, */
-  #custom-weather {
-    background-color: @surface0;
-    color: @yellow;
-    border-radius: 16px;
-    padding: 0.25rem 0.75rem;
-    box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
-    margin: 1px 6px;
-    margin-top: 2.5px;
-    margin-right: 10px;
-    margin-left: 10px
-  }
-  
+}
 
-/* =============================== */
-/* Workspaces */
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+    background: inherit;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+/* you can set a style on hover for any module like this */
+#pulseaudio:hover {
+    background-color: @blue;
+    color: @crust
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: @base;
+    color: @text;
+}
+
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.focused {
+    background-color: #64727D;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#mode {
+    background-color: #64727D;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+#workspaces,
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#power-profiles-daemon,
+#power,
+#custom-weather,
+#mpd {
+    padding:0.25rem 0.50rem;
+    margin: 1px 6px;
+    background-color: @base;
+    border-radius: 25px;
+}
+
+#window,
 #workspaces {
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-  
-  #workspaces * {
-    font-size: 0px;
-  }
-  
-  #workspaces button {
-    background-color: @surface3;
-    color: @mauve;
-    border-radius: 100%;
-    min-height: 14px;
-    min-width: 14px;
-    margin: 5px 8px;
-    padding: 0px;
-    /*transition: all 0.5s cubic-bezier(0.33, 1.0, 0.68, 1.0); easeInOutCubic */
-    transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
-    box-shadow: rgba(0, 0, 0, 0.288) 2px 2px 5px 2px;
-  }
-  
-  #workspaces button.active {
-    /*color: @surface0;
-      border-radius: 1rem;
-      padding: 0rem 10px;*/
-    background: radial-gradient(
-      circle,
-      rgba(203, 166, 247, 1) 0%,
-      rgba(193, 168, 247, 1) 12%,
-      rgba(249, 226, 175, 1) 19%,
-      rgba(189, 169, 247, 1) 20%,
-      rgba(182, 171, 247, 1) 24%,
-      rgba(198, 255, 194, 1) 36%,
-      rgba(177, 172, 247, 1) 37%,
-      rgba(170, 173, 248, 1) 48%,
-      rgba(255, 255, 255, 1) 52%,
-      rgba(166, 174, 248, 1) 52%,
-      rgba(160, 175, 248, 1) 59%,
-      rgba(148, 226, 213, 1) 66%,
-      rgba(155, 176, 248, 1) 67%,
-      rgba(152, 177, 248, 1) 68%,
-      rgba(205, 214, 244, 1) 77%,
-      rgba(148, 178, 249, 1) 78%,
-      rgba(144, 179, 250, 1) 82%,
-      rgba(180, 190, 254, 1) 83%,
-      rgba(141, 179, 250, 1) 90%,
-      rgba(137, 180, 250, 1) 100%
-    );
-    background-size: 400% 400%;
-    animation: gradient_f 20s ease-in-out infinite;
-    transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
-  }
-  
-  #workspaces button:hover {
-    background-color: @mauve;
-  }
-  
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-  
-    50% {
-      background-position: 100% 30%;
-    }
-  
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
-  @keyframes gradient_f {
-    0% {
-      background-position: 0% 200%;
-    }
-  
-    50% {
-      background-position: 200% 0%;
-    }
-  
-    100% {
-      background-position: 400% 200%;
-    }
-  }
-  
-  @keyframes gradient_f_nh {
-    0% {
-      background-position: 0% 200%;
-    }
-  
-    100% {
-      background-position: 200% 200%;
-    }
-  }
-  
+    margin: 0 4px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
 
 
 #clock {
