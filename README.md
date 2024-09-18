@@ -1,4 +1,4 @@
-## Ruhan Shafi's 2024 Hyprland Configurations
+# Ruhan Shafi's 2024 Hyprland Configurations
 
 ## Screenshoots
 <details>
@@ -14,7 +14,7 @@ Spiced up Spotify - Spicetify (Work in Progress)
 <summary>Packages Required</summary>
 
 | Package Name                                                                            | Description                                        | Package Manager |
-| --------------------------------------------------------------------------------------- | -------------------------------------------------- | --------------- |
+| :--------------------------------------------------------------------------------------:| :-------------------------------------------------:| :-------------: |
 | [nvidia](https://archlinux.org/packages/extra/x86_64/nvidia/)                           | driver                                             | Pacman          |
 | [ nvidia-utils ](https://archlinux.org/packages/extra/x86_64/nvidia-utils/)             | drivers Utils                                      | Pacman          |
 | [ nvidia-prime ](https://archlinux.org/packages/extra/any/nvidia-prime/)                | nvidia offload                                     | Pacman          |
@@ -40,9 +40,10 @@ Spiced up Spotify - Spicetify (Work in Progress)
 ### Network:
 
 <details>
+<summary>Packages</summary>
 
 | Package Name                                                                                    | Description          | Package Manager |
-| ----------------------------------------------------------------------------------------------- | -------------------- | --------------- |
+| :---------------------------------------------------------------------------------------------: | :------------------: | :-------------: |
 | [ networkmanager ](https://archlinux.org/packages/extra/x86_64/networkmanager/)                 | network manager      | Pacman          |
 | [ network-manager-applet ](https://archlinux.org/packages/extra/x86_64/network-manager-applet/) | network manager tray | Pacman          |
 
@@ -53,9 +54,10 @@ Spiced up Spotify - Spicetify (Work in Progress)
 ### Bluetooth:
 
 <details>
+<summary>Packages</summary>
 
 | Package Name                                                              | Description                    | Package Manager |
-| ------------------------------------------------------------------------- | ------------------------------ | --------------- |
+| :-----------------------------------------------------------------------: | :----------------------------: | :-------------: |
 | [ bluez ](https://archlinux.org/packages/extra/x86_64/bluez/)             | Daemons for bluetooth protocol | Pacman          |
 | [ bluez-utils ](https://archlinux.org/packages/extra/x86_64/bluez-utils/) | utils for bluetooth            | Pacman          |
 | [ blueman ](https://archlinux.org/packages/extra/x86_64/blueman/)         | bluetooth tray                 | Pacman          |
@@ -63,6 +65,19 @@ Spiced up Spotify - Spicetify (Work in Progress)
   <br>
 
 </details>
+
+### Audio Drivers:
+ 
+<details>
+<summary>Packages</summary>
+
+| Package Name                                                              | Description                    | Package Manager |
+| :-----------------------------------------------------------------------: | :-----------------------------:| :-------------: |
+| Pipewire                                                                  | Audio Drivers                  | Pacman          |
+| Wireplumber                                                               | Pipewire Plugin                | Pacman          |
+
+<br>
+</detials>
 
 * OS - Arch <sub><sub>BTW :)</sub>
 * WM - Hyprland
@@ -94,14 +109,14 @@ Spiced up Spotify - Spicetify (Work in Progress)
 </details>
 
 ## Keybindings
-| Keys | Action |
-| :--- | :--- |
-| <kbd>Super</kbd> + <kbd>T</kbd> | Launch terminal emulator (Alacritty) |
-| <kbd>Super</kbd> + <kbd>E</kbd> | Launch file manager (Dolphin) |
-| <kbd>Super</kbd> + <kbd>L</kbd> | Lock Screen (Hyprlock) |
-| <kbd>Super</kbd> + <kbd>P</kbd> | Launch Display Manager (nwg-display) |
-| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>→</kbd> | Next Wallpaper |
-| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>←</kbd> | Previous Wallpaper |
+| Keys                                             | Action                               |
+| :----------------------------------------------: | :----------------------------------: |
+| <kbd>Super</kbd> + <kbd>T</kbd>                  | Launch terminal emulator (Alacritty) |
+| <kbd>Super</kbd> + <kbd>E</kbd>                  | Launch file manager (Dolphin)        |
+| <kbd>Super</kbd> + <kbd>L</kbd>                  | Lock Screen (Hyprlock)               |
+| <kbd>Super</kbd> + <kbd>P</kbd>                  | Launch Display Manager (nwg-display) |
+| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>→</kbd> | Next Wallpaper                       |
+| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>←</kbd> | Previous Wallpaper                   |
                         
 ## Stargazers over time ( Yeah I have a Big Ego... So what?)
 [![Stargazers over time](https://starchart.cc/RuhanShafi/Hyprland-Dotfiles.svg?variant=adaptive)](https://starchart.cc/RuhanShafi/Hyprland-Dotfiles)

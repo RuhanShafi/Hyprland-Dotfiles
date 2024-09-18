@@ -65,3 +65,6 @@ alias ani-cli="ani-cli -v"
 #fastfetch
 
 export PATH=$PATH:/home/RuhanShafi/.spicetify
+
+# Created by `pipx` on 2024-09-16 01:08:05
+export PATH="$PATH:/home/ruhanshafi/.local/bin"

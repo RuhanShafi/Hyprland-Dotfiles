@@ -15,7 +15,7 @@
         //"hyprland/scratchpad",
         //"hyprland/window",
         "custom/media",
-        "cava",
+        //"cava",
         "cpu",
         "memory",
         "network",
@@ -26,9 +26,8 @@
     ],
     "modules-right": [
         "mpd",
-        //"idle_inhibitor",
+        "idle_inhibitor",
         "pulseaudio",
-        
         "power-profiles-daemon",
         //"cpu",
         //"memory",
@@ -40,7 +39,8 @@
         "battery",
         "battery#bat2",
         "tray",
-        "clock"
+        "clock",
+        "custom/notification"
     ],
     "keyboard-state": {
         "numlock": true,
@@ -262,7 +262,27 @@
             "clock",
             "memory"
         ]
-    }
+    },
+    "custom/notification": {
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+            "notification": "<span foreground='red'><sup></sup></span>",
+            "none": "",
+            "dnd-notification": "<span foreground='red'><sup></sup></span>",
+            "dnd-none": "",
+            "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+            "inhibited-none": "",
+            "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+            "dnd-inhibited-none": ""
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    },
 }
 
 
