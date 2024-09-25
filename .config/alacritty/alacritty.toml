@@ -1,5 +1,5 @@
 import = [
-	"/home/ruhanshafi/dotfiles/.config/alacritty/themes/catppuccin-mocha.toml"
+	"/home/ruhanshafi/dotfiles/.config/alacritty/catppuccin-mocha.toml"
 ]
 
 [env]
@@ -11,7 +11,7 @@ padding.y = 0
 
 decorations = "Buttonless"
 
-opacity = 0.8
+opacity = 1
 blur = false
 
 option_as_alt = "Both"

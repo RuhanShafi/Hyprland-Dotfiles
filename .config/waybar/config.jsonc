@@ -26,7 +26,7 @@
     ],
     "modules-right": [
         "mpd",
-        "idle_inhibitor",
+        //"idle_inhibitor",
         "pulseaudio",
         "power-profiles-daemon",
         //"cpu",

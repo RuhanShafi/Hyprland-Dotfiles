@@ -18,7 +18,15 @@ return {
       highlight_git= true,
 
         indent_markers = {
-          enable = true,
+          enable = false,
+          inline_arrows = true,
+          icons = {
+            corner = '│',
+            edge = '│',
+            item = '│',
+            bottom = '─',
+            none = '│',
+          }
         },
         icons = {
           glyphs = {
