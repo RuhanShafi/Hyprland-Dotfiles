@@ -3,6 +3,11 @@
 ## Screenshoots
 <details>
 <summary>The Pretty Looking Good Stuff :)</summary>
+
+Shina Fox Floorp Rice with Catppuccin Colours
+![Floorp Broswer](assets/Floorp.png "Floorp Broswer")
+
+
 Spiced up Spotify - Spicetify (Work in Progress)
 
 ![Spicetify](assets/Spotify.png "Spicetify")
