@@ -85,9 +85,7 @@ Spiced up Spotify - Spicetify (Work in Progress)
 </detials>
 
 ## Workflow Setup
-
-<details>
-<summary>INFO DUMP TO CLEAN LATER</summary>
+  
 * OS - Arch <sub><sub>BTW :)</sub>
 * WM - Hyprland
     * Wallpaper Daemon - ``wpaperd``
