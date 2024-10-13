@@ -84,6 +84,8 @@ Spiced up Spotify - Spicetify (Work in Progress)
 <br>
 </detials>
 
+## Workflow Setup
+
 * OS - Arch <sub><sub>BTW :)</sub>
 * WM - Hyprland
     * Wallpaper Daemon - ``wpaperd``
@@ -100,7 +102,7 @@ Spiced up Spotify - Spicetify (Work in Progress)
 * Status Bar - Waybar
 * Dmenu Launcher - Rofi
 * Music Player - Spicetify
-    * Theme - Galaxy (Suprisingly not Catppuccin)
+    * Theme - Galaxy (Surprisingly not Catppuccin)
 
 * Terminal - Alacritty
     * Shell - Zsh
@@ -108,7 +110,7 @@ Spiced up Spotify - Spicetify (Work in Progress)
 * File Manager - Dolphin
 * IDEs 
     * General Editing - Neovim
-    * Machine Learning & Juipter Notebook / Stuff you really don't want to do in a terminal - Code
+    * Machine Learning & Jupiter Notebook / Stuff you really don't want to do in a terminal - Code
     * Maths - TexStudio + TexLive
 * Obsidian
 </details>
@@ -118,8 +120,12 @@ Spiced up Spotify - Spicetify (Work in Progress)
 | :----------------------------------------------: | :----------------------------------: |
 | <kbd>Super</kbd> + <kbd>T</kbd>                  | Launch terminal emulator (Alacritty) |
 | <kbd>Super</kbd> + <kbd>E</kbd>                  | Launch file manager (Dolphin)        |
+| <kbd>Super</kbd> + <kbd>R</kbd>                  | Launch Rofi Menu|
 | <kbd>Super</kbd> + <kbd>L</kbd>                  | Lock Screen (Hyprlock)               |
 | <kbd>Super</kbd> + <kbd>P</kbd>                  | Launch Display Manager (nwg-display) |
+| <kbd>Super</kbd> + <kbd>1-0</kbd>               | Switch Workspaces|
+| <kbd>Super</kbd> + +<kbd>Shift<\kbd> + <kbd>1-0</kbd>               | Move Active Window to Workspace|
+| <kbd>Super</kbd> + +<kbd>Shift<\kbd> + <kbd>→,←,↑ ,↓</kbd>               | Resize Active Window |
 | <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>→</kbd> | Next Wallpaper                       |
 | <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>←</kbd> | Previous Wallpaper                   |
                         
