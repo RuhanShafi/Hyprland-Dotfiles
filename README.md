@@ -86,6 +86,8 @@ Spiced up Spotify - Spicetify (Work in Progress)
 
 ## Workflow Setup
 
+<details>
+<summary>INFO DUMP TO CLEAN LATER</summary>
 * OS - Arch <sub><sub>BTW :)</sub>
 * WM - Hyprland
     * Wallpaper Daemon - ``wpaperd``
@@ -113,6 +115,7 @@ Spiced up Spotify - Spicetify (Work in Progress)
     * Machine Learning & Jupiter Notebook / Stuff you really don't want to do in a terminal - Code
     * Maths - TexStudio + TexLive
 * Obsidian
+</detials>
 
 ## Keybindings
 | Keys                                             | Action                               |
