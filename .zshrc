@@ -62,9 +62,16 @@ alias ani-cli="ani-cli -v"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-#fastfetch
+fastfetch
 
 export PATH=$PATH:/home/RuhanShafi/.spicetify
 
 # Created by `pipx` on 2024-09-16 01:08:05
 export PATH="$PATH:/home/ruhanshafi/.local/bin"
+
+# bun completions
+[ -s "/home/ruhanshafi/.bun/_bun" ] && source "/home/ruhanshafi/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

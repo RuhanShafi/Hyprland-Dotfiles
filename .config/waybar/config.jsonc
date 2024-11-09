@@ -221,7 +221,7 @@
         "format": "{}°",
         "tooltip": true,
         "interval": 3600,
-        "exec": "wttrbar",
+        "exec": "wttrbar --location Wollongong",
         "return-type": "json"
     },
 

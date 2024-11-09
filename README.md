@@ -1,6 +1,7 @@
 # Ruhan Shafi's 2024 Hyprland Configurations
 
 ## Screenshoots
+![Hyprland Rice](assets/base.png)
 <details>
 <summary>The Pretty Looking Good Stuff :)</summary>
 

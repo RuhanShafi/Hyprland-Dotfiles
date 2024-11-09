@@ -1,6 +1,3 @@
-import = [
-	"/home/ruhanshafi/dotfiles/.config/alacritty/catppuccin-mocha.toml"
-]
 
 [env]
 TERM = "xterm-256color"
@@ -17,6 +14,11 @@ blur = false
 option_as_alt = "Both"
 
 [font]
+
+[general]
+import = [
+	"/home/ruhanshafi/dotfiles/.config/alacritty/catppuccin-mocha.toml"
+]
 #normal.family = "MesloLGS Nerd Font Mono"
 
 #size = 11
