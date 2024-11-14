@@ -18,6 +18,7 @@
       ],
       "right": [
         "volume",
+        "network",
         "bluetooth",
         "battery",
         "systray",
@@ -28,14 +29,21 @@
     "1": {
       "left": [
         "dashboard",
-        "workspaces",
-        "windowtitle"
+        "cpu",
+        "ram",
+        "netstat",
+        "media",
+        "weather"
       ],
       "middle": [
-        "media"
+        "workspaces"
       ],
       "right": [
         "volume",
+        "network",
+        "bluetooth",
+        "battery",
+        "systray",
         "clock",
         "notifications"
       ]
@@ -67,7 +75,7 @@
   "theme.bar.border.location": "none",
   "theme.bar.outer_spacing": "0.1em",
   "theme.bar.buttons.padding_y": "0.1em",
-  "bar.workspaces.show_icons": false,
+  "bar.workspaces.show_icons": true,
   "theme.bar.buttons.workspaces.enableBorder": true,
   "bar.workspaces.hideUnoccupied": true,
   "bar.workspaces.workspaceMask": true,
@@ -97,5 +105,31 @@
   "theme.bar.margin_top": "0.1em",
   "theme.bar.scaling": 95,
   "menus.media.hideAuthor": false,
-  "bar.media.show_active_only": true
+  "bar.media.show_active_only": true,
+  "bar.customModules.ram.leftClick": "btop",
+  "bar.customModules.cpu.leftClick": "btop",
+  "theme.osd.location": "top",
+  "theme.osd.orientation": "horizontal",
+  "theme.osd.duration": 3500,
+  "bar.customModules.ram.labelType": "percentage",
+  "bar.workspaces.applicationIconOncePerWorkspace": true,
+  "bar.workspaces.numbered_active_indicator": "highlight",
+  "theme.bar.buttons.workspaces.smartHighlight": true,
+  "bar.systray.ignore": [
+    "spotify-client",
+    "discord-client",
+    "nm-applet",
+    "blueman-applet"
+  ],
+  "wallpaper.image": "",
+  "theme.bar.opacity": 50,
+  "scalingPriority": "hyprland",
+  "theme.font.name": "JetBrains Mono Semi-Bold",
+  "tear": true,
+  "bar.clock.icon": "󰸗",
+  "bar.clock.showIcon": true,
+  "bar.clock.showTime": true,
+  "bar.clock.format": "%A %e %b %Y| %R",
+  "bar.network.label": false,
+  "bar.media.show_label": true
 }
