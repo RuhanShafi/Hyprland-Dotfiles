@@ -11,6 +11,7 @@
     "cpu",
     "memory",
     "network",
+    "bluetooth",
     "temperature",
     "pulseaudio",
     "battery"
@@ -19,11 +20,14 @@
     "hyprland/workspaces"
   ],
   "modules-right": [
+    "custom/weather",
     "mpris",
     "clock",
     "custom/media",
     "customer/weather",
     "tray",
+    "idle_inhibitor",
+    "backlight/slider",
     "custom/notification"
   ],
 
@@ -42,8 +46,9 @@
 
   "network": {
     "format": " {bandwidthUpBytes}\n {bandwidthDownBytes}",
-    "format-wifi": " {bandwidthUpBytes} |  {bandwidthDownBytes} | {signalStrength}% 󰖩 ",
-    "format-disconnected": "⚡"
+    "format-wifi": " {bandwidthUpBytes} |  {bandwidthDownBytes} |    {signalStrength}%",
+    "format-disconnected": "⚡",
+    "on-click": "nm-connection-editor"
   },
 
   "temperature": {
@@ -54,16 +59,27 @@
   },
 
   "battery": {
-
+    "interval": 60,
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon}   {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "max-length": 25
   },
 
   "clock": {
-    "format": "  {:%A %e %b %Y | %H:%M}",
+    "format": "  {:%A %e %b %Y | %H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
 
   "pulseaudio": {
-    "format": "{icon} {volume}",
+    "format": "{icon}   {volume}",
+    "format-icons": {
+      "default": ["", ""],
+      "headset": "",
+    },
     "scroll-step": 5,
     "on-click": "pavucontrol"
 
@@ -76,32 +92,6 @@
 		  "default": ""
     }
 
-  },
-
-  "hyprland/mode": {
-    "format": "<span style=\"italic\">{}</span>"
-    },
-  "hyprland/scratchpad": {
-      "format": "{icon} {count}",
-      "show-empty": false,
-      "format-icons": ["", ""],
-      "tooltip": true,
-      "tooltip-format": "{app}: {title}"
-    },
-  "hyprland/window": {
-    "format": "  {}",
-    "separate-outputs": true,
-    "max-length": 32,
-    "rewrite": {
-      "(.*)fish": "> [$1]",
-      "(.*)neovide": "neovide 󰕷 ", // doesn't seem to work
-      "(.*)Mozilla Firefox": "Firefox 󰈹",
-      "(.*)BlueMail": "BlueMail 󰊫 ",
-      "(.*)Visual Studio Code": "Code 󰨞",
-      "(.*)Dolphin": "$1 󰉋",
-      "(.*)Spotify": "Spotify 󰓇",
-      "(.*)Steam": "Steam 󰓓"
-    }
   },
 
   "custom/notification": {
@@ -133,12 +123,37 @@
     "format": "{status_icon} {dynamic}",
     "interval": 1,
     "dynamic-len": 40,
+    "player-icon": {
+      "spotify": "",
+    },
     "status-icons": {
-      "playing": "▶",
-      "paused": "⏸",
+      "playing": "󰐊",
+      "paused": "",
       "stopped": ""
     },
     "dynamic-order": ["title", "artist", "alblum"]
+  },
+
+  "bluetooth": {
+    //"format": 
+  },
+
+  "custom/weather": {
+        "custom/weather": {
+        "format": "{}°",
+        "tooltip": true,
+        "interval": 3600,
+        "exec": "wttrbar --location",
+        "return-type": "json"
+    }
+  },
+
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+        "activated": "",
+        "deactivated": ""
+    }
   }
 }
 
