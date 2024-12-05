@@ -63,6 +63,8 @@ alias ani-cli="ani-cli -v"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 fastfetch
+export EDITOR=nvim
+export VISUAL=nvim
 
 export PATH=$PATH:/home/RuhanShafi/.spicetify
 
