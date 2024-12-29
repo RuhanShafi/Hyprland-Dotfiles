@@ -16,7 +16,7 @@
     "pulseaudio",
     "battery"
   ],
-  "modules-middle": [
+  "modules-center": [
     "hyprland/workspaces"
   ],
   "modules-right": [
@@ -45,7 +45,7 @@
   },
 
   "network": {
-    "format": " {bandwidthUpBytes}\n {bandwidthDownBytes}",
+    "format": " {bandwidthUpBytes} {bandwidthDownBytes}",
     "format-wifi": " {bandwidthUpBytes} |  {bandwidthDownBytes} |  {signalStrength}%",
     "format-disconnected": "⚡",
     "on-click": "agsv1 -t networkmenu",
@@ -189,6 +189,7 @@
       "(.*)Steam": "Steam 󰓓"
     }
   },
+
   "backlight": {
     // "device": "acpi_video1",
     "format": "{icon} {percent}%",

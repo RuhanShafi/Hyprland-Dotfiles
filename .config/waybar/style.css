@@ -49,6 +49,7 @@
 #tray,
 #backlight,
 #idle_inhibitor,
+#workspaces,
 #clock{
   background-color: @base;
   padding: 0px 5px;
@@ -140,25 +141,26 @@ padding: 2.5px 10px;
 
 #workspaces * {
 font-size: 0px;
+
 }
 
 #workspaces button {
 background-color: @surface;
-color: @red;
 border-radius: 100%;
-min-height: 14px;
-min-width: 14px;
+min-height: 0.1px;
+min-width: 0.1px;
 margin: 5px 8px;
-padding: 0px;
 /*transition: all 0.5s cubic-bezier(0.33, 1.0, 0.68, 1.0); easeInOutCubic */
 transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
 box-shadow: rgba(0, 0, 0, 0.288) 2px 2px 5px 2px;
+
 }
 
 #workspaces button.active {
 /*color: @surface0;
  *   border-radius: 1rem;
  *   padding: 0rem 10px;*/
+
 background: radial-gradient(
   circle,
   rgba(203, 166, 247, 1) 0%,
