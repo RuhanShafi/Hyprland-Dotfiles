@@ -1,6 +1,11 @@
 return {
   "nvim-tree/nvim-tree.lua",
-  dependencies = "nvim-tree/nvim-web-devicons",
+  dependencies = {
+		"nvim-lua/plenary.nvim",
+		"nvim-tree/nvim-web-devicons",
+		"MunifTanjim/nui.nvim",
+    "echasnovski/mini.icons",
+  },
   config = function()
     local nvimtree = require("nvim-tree")
 

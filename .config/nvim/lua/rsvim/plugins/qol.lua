@@ -1,4 +1,5 @@
 return {
+  {
   "windwp/nvim-autopairs",
   event = { "InsertEnter" },
   dependencies = {
@@ -27,4 +28,14 @@ return {
     -- make autopairs and completion work together
     cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
   end,
+},
+{
+  "lukas-reineke/indent-blankline.nvim",
+  event = { "BufReadPre", "BufNewFile" },
+  main = "ibl",
+  opts = {
+    indent = { char = "┊" },
+  },
 }
+}
+
