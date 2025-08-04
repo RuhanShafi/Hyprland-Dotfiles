@@ -52,6 +52,7 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
 export PATH=$PATH:/home/ruhanshafi/.spicetify
+export GTK_THEME="catppuccin-mocha-mauve-standard+default:dark"
 
 # ---- Eza (better ls) -----
 
@@ -62,7 +63,6 @@ alias ani-cli="ani-cli -v"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-#fastfetch
 export EDITOR=nvim
 export VISUAL=nvim
 
@@ -77,3 +77,5 @@ export PATH="$PATH:/home/ruhanshafi/.local/bin"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+fastfetch

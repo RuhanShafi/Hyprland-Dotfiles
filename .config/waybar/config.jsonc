@@ -89,7 +89,7 @@
     },
     "scroll-step": 5,
     "on-click": "agsv1 -t audiomenu",
-    "on-click-right": "pavucontrol"
+    "on-click-right": "pwvucontrol"
 
   },
 
