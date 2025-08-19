@@ -1,0 +1,135 @@
+{
+  "bar.customModules.updates.pollingInterval": 1440000,
+  "theme.bar.floating": false,
+  "theme.bar.menus.opacity": 100,
+  "theme.bar.transparent": true,
+  "bar.layouts": {
+    "0": {
+      "left": [
+        "dashboard",
+        "cpu",
+        "ram",
+        "netstat",
+        "media",
+        "weather"
+      ],
+      "middle": [
+        "workspaces"
+      ],
+      "right": [
+        "volume",
+        "network",
+        "bluetooth",
+        "battery",
+        "systray",
+        "clock",
+        "notifications"
+      ]
+    },
+    "1": {
+      "left": [
+        "dashboard",
+        "cpu",
+        "ram",
+        "netstat",
+        "media",
+        "weather"
+      ],
+      "middle": [
+        "workspaces"
+      ],
+      "right": [
+        "volume",
+        "network",
+        "bluetooth",
+        "battery",
+        "systray",
+        "clock",
+        "notifications"
+      ]
+    },
+    "2": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "clock",
+        "notifications"
+      ]
+    }
+  },
+  "theme.bar.buttons.modules.ram.enableBorder": true,
+  "theme.bar.buttons.modules.cpu.enableBorder": true,
+  "theme.bar.buttons.modules.netstat.enableBorder": true,
+  "theme.bar.buttons.modules.weather.enableBorder": true,
+  "bar.customModules.weather.unit": "metric",
+  "menus.dashboard.powermenu.avatar.name": "Ruhan Shafi",
+  "menus.dashboard.powermenu.avatar.image": "/home/ruhanshafi/Pictures/Camera Roll/WhatsApp Image 2022-03-27 at 11.57.00 AM.jpeg",
+  "menus.dashboard.shortcuts.left.shortcut1.tooltip": "Floorp",
+  "theme.bar.border.location": "none",
+  "theme.bar.outer_spacing": "0.1em",
+  "theme.bar.buttons.padding_y": "0.1em",
+  "bar.workspaces.show_icons": true,
+  "theme.bar.buttons.workspaces.enableBorder": true,
+  "bar.workspaces.hideUnoccupied": true,
+  "bar.workspaces.workspaceMask": true,
+  "bar.workspaces.showAllActive": true,
+  "bar.workspaces.showApplicationIcons": false,
+  "bar.workspaces.showWsIcons": false,
+  "bar.workspaces.spacing": 0.9,
+  "bar.workspaces.workspaces": 1,
+  "menus.bluetooth.showBattery": true,
+  "menus.bluetooth.batteryState": "paired",
+  "menus.clock.weather.unit": "metric",
+  "menus.clock.weather.location": "Canberra",
+  "bar.workspaces.show_numbered": false,
+  "theme.bar.buttons.windowtitle.enableBorder": true,
+  "theme.bar.buttons.bluetooth.enableBorder": true,
+  "theme.bar.buttons.network.enableBorder": true,
+  "theme.bar.buttons.battery.enableBorder": true,
+  "theme.bar.buttons.media.enableBorder": true,
+  "theme.bar.buttons.notifications.enableBorder": true,
+  "theme.bar.buttons.clock.enableBorder": true,
+  "theme.bar.buttons.systray.enableBorder": true,
+  "theme.bar.buttons.volume.enableBorder": true,
+  "theme.bar.buttons.dashboard.enableBorder": true,
+  "theme.bar.buttons.enableBorders": false,
+  "theme.bar.buttons.radius": "0.35em",
+  "theme.bar.margin_bottom": "0.1em",
+  "theme.bar.margin_top": "0.1em",
+  "theme.bar.scaling": 95,
+  "menus.media.hideAuthor": false,
+  "bar.media.show_active_only": true,
+  "bar.customModules.ram.leftClick": "btop",
+  "bar.customModules.cpu.leftClick": "btop",
+  "theme.osd.location": "top",
+  "theme.osd.orientation": "horizontal",
+  "theme.osd.duration": 3500,
+  "bar.customModules.ram.labelType": "percentage",
+  "bar.workspaces.applicationIconOncePerWorkspace": true,
+  "bar.workspaces.numbered_active_indicator": "highlight",
+  "theme.bar.buttons.workspaces.smartHighlight": true,
+  "bar.systray.ignore": [
+    "spotify-client",
+    "discord-client",
+    "nm-applet",
+    "blueman-applet"
+  ],
+  "wallpaper.image": "",
+  "theme.bar.opacity": 50,
+  "scalingPriority": "hyprland",
+  "theme.font.name": "JetBrains Mono Semi-Bold",
+  "tear": true,
+  "bar.clock.icon": "󰸗",
+  "bar.clock.showIcon": true,
+  "bar.clock.showTime": true,
+  "bar.clock.format": "%A %e %b %Y| %R",
+  "bar.network.label": false,
+  "bar.media.show_label": true
+}
