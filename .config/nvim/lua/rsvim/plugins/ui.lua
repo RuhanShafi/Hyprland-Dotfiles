@@ -1,14 +1,31 @@
 return {
-  {
+  { -- Primary Theme
     "catppuccin/nvim",
     lazy = false,
     name = "catppuccin",
     priority = 1000,
+    opts = {
+      term_colors = true,
+      styles = {
+        comments = { "italic" },
+        conditionals = { "italic" },
+        loops = {},
+        functions = { "bold" },
+        keywords = {},
+        strings = {},
+        variables = {},
+        numbers = {},
+        booleans = {},
+        properties = {},
+        types = {},
+        operators = {},
+      },
+    },
     config = function()
-      vim.cmd.colorscheme "catppuccin-mocha"
+      vim.cmd.colorscheme "catppuccin-mocha" -- Need to not make Static
     end
   },
-  {
+  { -- UI Overhaul
     "folke/noice.nvim",
     event = "VeryLazy",
     dependencies = {
@@ -20,51 +37,40 @@ return {
     }
   },
   {
-    "goolord/alpha-nvim",
-    dependencies = {
-      "nvim-tree/nvim-web-devicons",
-  },
-
-    config = function()
-      local alpha = require("alpha")
-      local dashboard = require("alpha.themes.startify")
-
-      dashboard.section.header.val = {
-        [[                                                                       ]],
-        [[                                                                       ]],
-        [[                                                                       ]],
-        [[                                                                       ]],
-        [[                                                                     ]],
-        [[       ████ ██████           █████      ██                     ]],
-        [[      ███████████             █████                             ]],
-        [[      █████████ ███████████████████ ███   ███████████   ]],
-        [[     █████████  ███    █████████████ █████ ██████████████   ]],
-        [[    █████████ ██████████ █████████ █████ █████ ████ █████   ]],
-        [[  ███████████ ███    ███ █████████ █████ █████ ████ █████  ]],
-        [[ ██████  █████████████████████ ████ █████ █████ ████ ██████ ]],
-        [[                                                                       ]],
-        [[                                                                       ]],
-        [[                                                                       ]],
-      }
-
-      alpha.setup(dashboard.opts)
-    end,
-  },
-  {
-    "catgoose/nvim-colorizer.lua",
-    event = "BufReadPre",
-    opts = { -- set to setup table
-    },
-  },
-  {
-    "akinsho/bufferline.nvim",
-    dependencies = { "nvim-tree/nvim-web-devicons" },
-    version = "*",
+    "NvChad/nvim-colorizer.lua",
     opts = {
-      options = {
-        mode = "tabs",
-        separator_style = "slant",
+      filetypes = { "*" },
+      user_default_options = {
+        mode = "background",
+        tailwind = true,
+        RGB = true,
+        RRGGBB = true,
+        names = true,
+        RRGGBBAA = true,
+        rgb_fn = true,
+        hsl_fn = true,
+        css = true,
+        css_fn = true,
+      },
     },
   },
+  {
+  "folke/snacks.nvim",
+  priority = 999,
+  lazy = false,
+  ---@type snacks.Config
+  opts = {
+    image = { enabled = true },
+    dashboard = { enabled = true },
+    indent = { enabled = true },
+    lazygit = { enabled = true },
+    notifier = { enabled = true},  
+    },
+  },
+  {
+    "Bekaboo/dropbar.nvim",
+    dependencies = {
+      "nvim-telescope/telescope-fzf-native.nvim",
+    },
   }
 }
