@@ -4,9 +4,9 @@ return {
     lazy = false,
   },
   {
-    'Thiago4532/mdmath.nvim',
+    "Thiago4532/mdmath.nvim",
     dependencies = {
-        'nvim-treesitter/nvim-treesitter',
+      "nvim-treesitter/nvim-treesitter",
     },
-  }
+  },
 }
