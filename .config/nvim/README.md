@@ -2,7 +2,7 @@
 
 >[!Note]
 > My full configuration and dotfiles for my daily Linux setup (including but not limited to Kitty+Tmux and Hyprland) can be found [here](https://github.com/RuhanShafi/Hyprland-Dotfiles)
-
+This is my loving modifications built upon `lazy.nvim` to better fit my setup
 ## Features
 * Plugin Manager - [`Lazy.nvim`](https://github.com/folke/lazy.nvim)
 * Syntax highlighting with [`Treesitter`](https://github.com/nvim-treesitter/nvim-treesitter)
@@ -13,6 +13,9 @@
 ### Markdown and LaTex for Notetaking
 
 Markdown and LaTex previewer - [`markview.nvim`](https://github.com/OXY2DEV/markview.nvim)
+
+Latex LSP: `texlab`
+
 
 ### Data Science Configratuion
 
