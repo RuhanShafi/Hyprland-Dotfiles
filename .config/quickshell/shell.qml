@@ -5,13 +5,15 @@ import QtQuick.Controls
 import QtQuick.Layouts
 import QtQuick.Window
 import Quickshell
+import Quickshell.Wayland // Required for Wayland-specific features like PanelWindow
 
-import qs.modules.Bar
+import "./modules/bar/"
 
 ShellRoot {
   id: root
 
-  Bar {
-    context: ctx
+  Loader {
+    active: true
+    sourceComponent: Bar {}
   }
 }
