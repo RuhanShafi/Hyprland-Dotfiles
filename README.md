@@ -30,4 +30,7 @@
    <br> 
 </details>
 
-
+# TODO
+* Configure Matugen
+* Quickshell
+  - Bar
