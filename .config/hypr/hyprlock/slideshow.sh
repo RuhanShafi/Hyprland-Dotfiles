@@ -2,11 +2,11 @@
 
 function main() {
   # Get a random wallpaper from Slideshow directory
-  wallpaper=$(fd -e png -e jpg -e jpeg -e webp . ~/Pictures/Lockscreen/ | shuf -n1)
+  wallpaper=$(fd -e png -e jpg -e jpeg -e webp . ~/Pictures/Wallpapers/ | shuf -n1)
 
   # Check if a wallpaper was found
   if [ -z "$wallpaper" ]; then
-    echo "No wallpapers found in ~/Pictures/Lockscreen/"
+    echo "No wallpapers found in ~/Pictures/Wallpapers/"
     exit 1
   fi
 
