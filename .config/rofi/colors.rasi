@@ -1,0 +1,45 @@
+/*****----- Catppuccin Mocha Colors -----*****/
+
+* {
+    /* Main colors for the layout */
+    main-bg:    #1e1e2eFF;
+    main-fg:    #cdd6f4FF;
+    selected:   #cba6f7FF;
+    active:     #89b4faFF;
+    urgent:     #f38ba8FF;
+    
+    /* For compatibility */
+    background:     #1e1e2eFF;
+    background-alt: #313244FF;
+    foreground:     #cdd6f4FF;
+    border-colour:  #313244FF;
+    
+    /* Additional Catppuccin Colors */
+    rosewater:  #f5e0dcFF;
+    flamingo:   #f2cdcdFF;
+    pink:       #f5c2e7FF;
+    mauve:      #cba6f7FF;
+    red:        #f38ba8FF;
+    maroon:     #eba0acFF;
+    peach:      #fab387FF;
+    yellow:     #f9e2afFF;
+    green:      #a6e3a1FF;
+    teal:       #94e2d5FF;
+    sky:        #89dcebFF;
+    sapphire:   #74c7ecFF;
+    blue:       #89b4faFF;
+    lavender:   #b4befeFF;
+    
+    text:       #cdd6f4FF;
+    subtext1:   #bac2deFF;
+    subtext0:   #a6adc8FF;
+    overlay2:   #9399b2FF;
+    overlay1:   #7f849cFF;
+    overlay0:   #6c7086FF;
+    surface2:   #585b70FF;
+    surface1:   #45475aFF;
+    surface0:   #313244FF;
+    base:       #1e1e2eFF;
+    mantle:     #181825FF;
+    crust:      #11111bFF;
+}

@@ -5,7 +5,8 @@
 _G.PROGRAMS = {
 	terminal = "kitty",
 	fileManager = "dolphin",
-	menu = "rofi -show drun",
+	menu = "~/.config/rofi/scripts/rofi_launcher.sh",
+
 	browser = "firefox",
 	editor = "neovide",
 }

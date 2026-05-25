@@ -17,6 +17,9 @@ hl.on("hyprland.start", function()
 	-- Idle daemon
 	hl.exec_cmd("hypridle")
 
+	-- Slideshow
+	hl.exec_cmd("~/dotfiles/.config/hypr/hyprlock/slideshow.sh &")
+
 	-- KDE integrations
 	hl.exec_cmd("/usr/lib/pam_kwallet_init")
 	hl.exec_cmd("kwalletd6")
