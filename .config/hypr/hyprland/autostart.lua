@@ -2,6 +2,9 @@
 -- Programs to launch on Hyprland start
 
 hl.on("hyprland.start", function()
+	-- Load plugins
+	hl.exec_cmd("hyprpm reload -n")
+
 	-- Status bar
 	hl.exec_cmd("waybar")
 
@@ -17,7 +20,7 @@ hl.on("hyprland.start", function()
 	-- Idle daemon
 	hl.exec_cmd("hypridle")
 
-	-- Slideshow
+	-- Hyprlock slideshow
 	hl.exec_cmd("~/dotfiles/.config/hypr/hyprlock/slideshow.sh &")
 
 	-- KDE integrations
@@ -28,17 +31,6 @@ hl.on("hyprland.start", function()
 	-- Blue light filter
 	hl.exec_cmd("hyprsunset")
 
-	-- Notification daemon
-	-- hl.exec_cmd("swaync")
-
-	-- Launch apps on specific workspaces
-	hl.dsp.exec_cmd({
-		command = "firefox",
-		rules = { workspace = 1, silent = true },
-	})
-
-	hl.dsp.exec_cmd({
-		command = "spotify-launcher",
-		rules = { workspace = 10, silent = true },
-	})
+	hl.exec_cmd("firefox", { workspace = "1" })
+	hl.exec_cmd("spotify-launcher ", { workspace = "10" })
 end)

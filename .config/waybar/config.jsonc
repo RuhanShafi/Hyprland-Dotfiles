@@ -3,9 +3,7 @@
   // The Fundementals
   "height": 45,
   "spacing": 4,
-
   // Module Positions
-
   "modules-left": [
     "custom/start",
     "cpu",
@@ -30,20 +28,26 @@
     "backlight",
     "custom/notification"
   ],
-
   // Module Configurations
   "cpu": {
-      "interval": 1,
-      "format": "  {usage}%",
-      "min-length": 6,
-      "max-length": 6,
-      "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
+    "interval": 1,
+    "format": "  {usage}%",
+    "min-length": 6,
+    "max-length": 6,
+    "format-icons": [
+      "▁",
+      "▂",
+      "▃",
+      "▄",
+      "▅",
+      "▆",
+      "▇",
+      "█"
+    ]
   },
-
   "memory": {
     "format": "  {percentage}%"
   },
-
   "network": {
     "format": " {bandwidthUpBytes} {bandwidthDownBytes}",
     "format-wifi": " {bandwidthUpBytes} |  {bandwidthDownBytes} |  {signalStrength}%",
@@ -51,82 +55,86 @@
     "on-click": "agsv1 -t networkmenu",
     "on-click-right": "nm-connection-editor"
   },
-
   "temperature": {
-    "format": " {temperatureC}°C",            
+    "format": " {temperatureC}°C",
     "format-critical": " {temperatureC}°C",
     "interval": 1,
     "critical-threshold": 80
   },
-
   "battery": {
-        "states": {
-            // "good": 95,
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{icon} {capacity}%",
-        "format-full": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
-        "format-alt": "{icon} {time}",
-        "format-icons": ["", "", "", "", ""],
-        "on-click": "agsv1 -t energymenu",
-        "on-click-right": "agsv1 -t powermenu"
+    "states": {
+      // "good": 95,
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-full": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{icon} {time}",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "on-click": "agsv1 -t energymenu",
+    "on-click-right": "agsv1 -t powermenu"
   },
-
   "clock": {
     "format": "  {:%A %e %b %Y | %H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "on-click": "agsv1 -t calendarmenu"
   },
-
   "pulseaudio": {
     "format": "{icon} {volume}",
     "format-icons": {
-      "default": ["", ""],
+      "default": [
+        "",
+        ""
+      ],
       "headset": "",
     },
     "scroll-step": 5,
     "on-click": "agsv1 -t audiomenu",
     "on-click-right": "pwvucontrol"
-
   },
-
   "hyprland/workspaces": {
     "format": "{icon}",
     "format-icons": {
       "active": "",
-		  "default": ""
-    }
-
-  },
-
-  "custom/notification": {
-        "tooltip": false,
-        "format": "{icon}",
-        "format-icons": {
-            "notification": "<span foreground='red'><sup></sup></span>",
-            "none": "",
-            "dnd-notification": "<span foreground='red'><sup></sup></span>",
-            "dnd-none": "",
-            "inhibited-notification": "<span foreground='red'><sup></sup></span>",
-            "inhibited-none": "",
-            "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
-            "dnd-inhibited-none": ""
-        },
-        "return-type": "json",
-        "exec-if": "which swaync-client",
-        "exec": "swaync-client -swb",
-        "on-click": "swaync-client -t -sw",
-        "on-click-right": "swaync-client -d -sw",
-        "escape": true
+      "default": ""
     },
-
-  "custom/start":{
-     "format": "{icon}",
-      "format-icons": "󰣇",
-      "on-click": "agsv1 -t dashboardmenu"
+    "on-scroll-up": "hyprctl dispatch split-cycleworkspaces -1",
+    "on-scroll-down": "hyprctl dispatch split-cycleworkspaces +1",
+    "all-outputs": false,
+    "show-special": false
+  },
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "<span foreground='red'><sup></sup></span>",
+      "none": "",
+      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-none": "",
+      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-inhibited-none": ""
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
+  "custom/start": {
+    "format": "{icon}",
+    "format-icons": "󰣇",
+    "on-click": "agsv1 -t dashboardmenu"
   },
   "mpris": {
     "format": "{status_icon} {dynamic}",
@@ -141,27 +149,29 @@
       "paused": "",
       "stopped": ""
     },
-    "dynamic-order": ["title", "position", "artist", "alblum"]
+    "dynamic-order": [
+      "title",
+      "position",
+      "artist",
+      "alblum"
+    ]
   },
-
   "bluetooth": {
     "format": "",
     "on-click": "agsv1 -t bluetoothmenu"
   },
-
-    "custom/weather": {
-        "format": "{}°",
-        "tooltip": true,
-        "interval": 3600,
-        "exec": "wttrbar --location Canberra",
-        "return-type": "json"
-    },
-
+  "custom/weather": {
+    "format": "{}°",
+    "tooltip": true,
+    "interval": 3600,
+    "exec": "wttrbar --location Canberra",
+    "return-type": "json"
+  },
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
-        "activated": "",
-        "deactivated": ""
+      "activated": "",
+      "deactivated": ""
     }
   },
   "hyprland/mode": {
@@ -170,7 +180,10 @@
   "hyprland/scratchpad": {
     "format": "{icon} {count}",
     "show-empty": false,
-    "format-icons": ["", ""],
+    "format-icons": [
+      "",
+      ""
+    ],
     "tooltip": true,
     "tooltip-format": "{app}: {title}"
   },
@@ -189,12 +202,19 @@
       "(.*)Steam": "Steam 󰓓"
     }
   },
-
   "backlight": {
     // "device": "acpi_video1",
     "format": "{icon} {percent}%",
-    "format-icons": ["", "", "", "", "", "", "", "", ""]
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
   },
 }
-
-

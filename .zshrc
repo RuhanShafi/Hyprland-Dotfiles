@@ -78,4 +78,4 @@ export PATH="$PATH:/home/ruhanshafi/.local/bin"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-
+export BAT_THEME="Catppuccin Mocha"

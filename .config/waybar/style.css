@@ -230,3 +230,15 @@ background-color: @red;
     background-position: 200% 200%;
   }
 }
+
+#workspaces button.empty {
+    min-width: 0;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+    opacity: 0;
+    font-size: 0;
+    /* collapse the button entirely without removing it from the DOM
+       (removing from DOM requires persistent-workspaces=0 which breaks boot) */
+}

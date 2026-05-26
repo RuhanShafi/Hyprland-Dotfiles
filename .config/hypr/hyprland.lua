@@ -11,7 +11,7 @@
 
 require("hyprland.keybinds")
 require("hyprland.programs")
-require("hyprland.monitor")
+require("monitors")
 require("hyprland.autostart")
 require("hyprland.env")
 require("hyprland.input")
