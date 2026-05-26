@@ -39,7 +39,7 @@
 }
 
 configuration {
-    modi:                        "drun,filebrowser,window,run";
+    modi:                        "drun,run,filebrowser,window";
     show-icons:                  true;
     display-drun:                "";
     display-run:                 " ";
