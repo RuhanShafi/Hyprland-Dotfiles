@@ -59,7 +59,7 @@ export GTK_THEME="catppuccin-mocha-mauve-standard+default:dark"
 
 alias ls="eza -a --icons=always"
 alias mangal="mangal --icons nerd"
-alias ani-cli="ani-cli -v"
+#alias ani-cli="ani-cli -v"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
