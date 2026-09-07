@@ -40,10 +40,10 @@ hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 -- Media Controls
 hl.bind(mainMod .. " + ALT + SPACE", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
-hl.bind(mainMod .. " + ALT + down", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
-hl.bind(mainMod .. " + ALT + left", hl.dsp.exec_cmd("playerctl position 5-"), { locked = true })
-hl.bind(mainMod .. " + ALT + up", hl.dsp.exec_cmd("playerctl next"), { locked = true })
-hl.bind(mainMod .. " + ALT + right", hl.dsp.exec_cmd("playerctl position 5+"), { locked = true })
+hl.bind(mainMod .. " + ALT + down", hl.dsp.exec_cmd("playerctl previous"), { locked = true, repeating = true })
+hl.bind(mainMod .. " + ALT + left", hl.dsp.exec_cmd("playerctl position 5-"), { locked = true, repeating = true })
+hl.bind(mainMod .. " + ALT + up", hl.dsp.exec_cmd("playerctl next"), { locked = true, repeating = true })
+hl.bind(mainMod .. " + ALT + right", hl.dsp.exec_cmd("playerctl position 5+"), { locked = true, repeating = true })
 
 -- Media Keys
 hl.bind(
