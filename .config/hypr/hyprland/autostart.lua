@@ -15,7 +15,7 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("blueman-applet")
 
 	-- Wallpaper daemon
-	hl.exec_cmd("wpaperd -d")
+	hl.exec_cmd("skwd-wall-v2")
 
 	-- Idle daemon
 	hl.exec_cmd("hypridle")

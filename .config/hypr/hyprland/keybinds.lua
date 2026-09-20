@@ -68,16 +68,21 @@ hl.bind(
 	hl.dsp.exec_cmd("grim -g \"$(slurp -o)\" $(xdg-user-dir PICTURES)/Screenshots/$(date +'%s_grim.png')")
 )
 hl.bind(
+	"CTRL + P",
+	hl.dsp.exec_cmd("grim -g \"$(slurp -o)\" $(xdg-user-dir PICTURES)/Screenshots/$(date +'%s_grim.png')")
+)
+hl.bind(
 	"CTRL + SHIFT + Print",
 	hl.dsp.exec_cmd("grim -g \"$(slurp)\" $(xdg-user-dir PICTURES)/Screenshots/$(date +'%s_grim.png')")
 )
 
--- Wallpaper Controls
-hl.bind("CTRL + ALT + left", hl.dsp.exec_cmd("wpaperctl previous-wallpaper"))
-hl.bind("CTRL + ALT + right", hl.dsp.exec_cmd("wpaperctl next-wallpaper"))
+-- Wallpaper Controls for wpaperctl, need to rewrite for skwd-wall-v2
+-- hl.bind("CTRL + ALT + left", hl.dsp.exec_cmd("wpaperctl previous-wallpaper"))
+-- hl.bind("CTRL + ALT + right", hl.dsp.exec_cmd("wpaperctl next-wallpaper"))
 
 -- Waybar Toggle
-hl.bind("CTRL + ALT + W", hl.dsp.exec_cmd("killall waybar && killall wpaperd || waybar && wpaperd"))
+hl.bind("CTRL + ALT + W", hl.dsp.exec_cmd("killall waybar || waybar"))
+hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("skwd-wall-v2"))
 
 -- Logout Menu
 hl.bind("CTRL + ALT + Delete", hl.dsp.exec_cmd("wlogout"))
